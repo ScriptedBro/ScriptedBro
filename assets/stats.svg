@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 260" width="100%">
+  <defs>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0D1117" />
+      <stop offset="100%" stop-color="#161B22" />
+    </linearGradient>
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#818CF8" />
+    </linearGradient>
+    <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="50%" stop-color="#818CF8" />
+      <stop offset="100%" stop-color="#C084FC" />
+    </linearGradient>
+  </defs>
+
+  <!-- Left Card: GitHub Stats -->
+  <g transform="translate(0, 0)">
+    <rect width="490" height="260" rx="16" fill="url(#cardBg)" stroke="#30363D" stroke-width="1.5" />
+    <text x="28" y="42" font-family="'Segoe UI', -apple-system, sans-serif" font-size="18" font-weight="700" fill="url(#titleGrad)">
+      ⚡ ScriptedBro's GitHub Metrics
+    </text>
+    <line x1="28" y1="56" x2="462" y2="56" stroke="#21262D" stroke-width="1" />
+
+    <!-- Stat Rows -->
+    <g font-family="'Segoe UI', -apple-system, sans-serif" font-size="14" font-weight="600">
+      <text x="28" y="92" fill="#8B949E">🔥 Total Commits (This Year)</text>
+      <text x="315" y="92" fill="#F0F6FC" font-weight="700">1,467</text>
+
+      <text x="28" y="128" fill="#8B949E">🐛 Issues &amp; Discussions</text>
+      <text x="315" y="128" fill="#F0F6FC" font-weight="700">1,488</text>
+
+      <text x="28" y="164" fill="#8B949E">🚀 Pull Requests Merged/Opened</text>
+      <text x="315" y="164" fill="#F0F6FC" font-weight="700">171</text>
+
+      <text x="28" y="200" fill="#8B949E">📦 Public Repositories</text>
+      <text x="315" y="200" fill="#F0F6FC" font-weight="700">107</text>
+
+      <text x="28" y="234" fill="#8B949E">🛡️ Core Ecosystem</text>
+      <text x="315" y="234" fill="#38BDF8" font-weight="700">Stellar · ZK · AI</text>
+    </g>
+
+    <!-- Grade Circle -->
+    <g transform="translate(415, 145)">
+      <circle cx="0" cy="0" r="44" fill="none" stroke="#21262D" stroke-width="7" />
+      <circle cx="0" cy="0" r="44" fill="none" stroke="url(#ringGrad)" stroke-width="7" stroke-dasharray="245 276" stroke-linecap="round" transform="rotate(-90)" />
+      <text x="0" y="6" font-family="'Segoe UI', sans-serif" font-size="24" font-weight="800" fill="#F0F6FC" text-anchor="middle">A+</text>
+      <text x="0" y="24" font-family="'Segoe UI', sans-serif" font-size="9.5" font-weight="600" fill="#8B949E" text-anchor="middle">RANK</text>
+    </g>
+  </g>
+
+  <!-- Right Card: Top Languages -->
+  <g transform="translate(510, 0)">
+    <rect width="490" height="260" rx="16" fill="url(#cardBg)" stroke="#30363D" stroke-width="1.5" />
+    <text x="28" y="42" font-family="'Segoe UI', -apple-system, sans-serif" font-size="18" font-weight="700" fill="url(#titleGrad)">
+      💻 Most Used Languages &amp; Stacks
+    </text>
+    <line x1="28" y1="56" x2="462" y2="56" stroke="#21262D" stroke-width="1" />
+
+    <!-- Multi-Segment Progress Bar -->
+    <g transform="translate(28, 76)">
+      <rect x="0" y="0" width="230" height="12" rx="6" fill="#3178C6" />
+      <rect x="232" y="0" width="75" height="12" fill="#DEA584" />
+      <rect x="309" y="0" width="58" height="12" fill="#F1E05A" />
+      <rect x="369" y="0" width="36" height="12" fill="#AA6746" />
+      <rect x="407" y="0" width="27" height="12" rx="6" fill="#3572A5" />
+    </g>
+
+    <!-- Language Legend Grid -->
+    <g transform="translate(28, 118)" font-family="'Segoe UI', -apple-system, sans-serif" font-size="13.5" font-weight="600">
+      <!-- Col 1 -->
+      <circle cx="8" cy="-4" r="6" fill="#3178C6" />
+      <text x="22" y="0" fill="#E6EDF3">TypeScript</text>
+      <text x="155" y="0" fill="#8B949E">53.2%</text>
+
+      <circle cx="8" cy="34" r="6" fill="#DEA584" />
+      <text x="22" y="38" fill="#E6EDF3">Rust (Soroban)</text>
+      <text x="155" y="38" fill="#8B949E">17.4%</text>
+
+      <circle cx="8" cy="72" r="6" fill="#F1E05A" />
+      <text x="22" y="76" fill="#E6EDF3">JavaScript</text>
+      <text x="155" y="76" fill="#8B949E">13.5%</text>
+
+      <!-- Col 2 -->
+      <circle cx="235" cy="-4" r="6" fill="#AA6746" />
+      <text x="249" y="0" fill="#E6EDF3">Solidity &amp; Noir ZK</text>
+      <text x="395" y="0" fill="#8B949E">8.4%</text>
+
+      <circle cx="235" cy="34" r="6" fill="#3572A5" />
+      <text x="249" y="38" fill="#E6EDF3">Python (MCP/AI)</text>
+      <text x="395" y="38" fill="#8B949E">4.5%</text>
+
+      <circle cx="235" cy="72" r="6" fill="#E34C26" />
+      <text x="249" y="76" fill="#E6EDF3">HTML5 / CSS3</text>
+      <text x="395" y="76" fill="#8B949E">3.0%</text>
+    </g>
+
+    <!-- Bottom Highlight Pill -->
+    <rect x="28" y="214" width="434" height="28" rx="8" fill="#161B22" stroke="#21262D" stroke-width="1" />
+    <text x="245" y="232" font-family="'Segoe UI', monospace" font-size="11.5" fill="#8B949E" text-anchor="middle">
+      ✨ Building Full-Stack Web3 Apps, Smart Contracts &amp; Agentic Protocols
+    </text>
+  </g>
+</svg>
